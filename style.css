@@ -194,6 +194,7 @@ th:first-child, td:first-child {
 
 .logo-fans {
     animation: rotating 4s linear; 
+    margin-right: 171px;
 }
 
 @keyframes slideFromLeft {
@@ -215,44 +216,6 @@ th:first-child, td:first-child {
     }
 
 }
-
-/* @media(max-width: 768px) {
-    div.hamburger-menu {
-        display: block;
-    }
-
-   div.nav-bar {
-       display: none;
-   }
-
-   img.background-img {
-       display: none;
-   }
-
-   img.background-img-phone {
-       display: block;
-       max-width: 100%;
-       margin-top: -20px;
-   }
-
-   p {
-    text-align: left;
-    padding: 5px;
-    margin-left: 10px;
-}
-
-    li {
-    padding: 5px;
-    display: block; 
-}
-
-.foto-zoloti-imena {
-    margin: 0 7px 5px 30px;
-}
-
-}
-
-*/
 
 
 @media(max-width: 768px) {
