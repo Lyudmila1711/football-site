@@ -9,24 +9,52 @@
 </head>
 <body>
     <header>
-        <nav class="topnav">
-            <a class="active rotate" href="index.html">Головна</a>
-            <div class="dropdown">
-                <p class="dropbtn">Матчі
-                </p>
-                <div class="dropdown-content">
-                  <a href="matches.html">Календар матчів</a>
-                  <a href="#">Наступна гра</a>
-                  <a href="#">Рейтинг</a>
-                </div>
+        <div class="nav-bar">
+            <nav class="topnav flex">
+                <a class="active rotate" href="index.html">Головна</a>
+                <div class="dropdown">
+                    <p class="dropbtn">Матчі
+                    </p>
+                    <div class="dropdown-content">
+                      <a href="matches.html">Календар матчів</a>
+                      <a href="#">Наступна гра</a>
+                      <a href="#">Рейтинг</a>
+                    </div>
+                  </div>
+                <a class="rotate" href="">Новини</a>
+                <a class="rotate" href="fans.html">ФАН</a>
+                <a class="rotate" href="#contacts">Контакти</a>
+                <a class="rotate" href="">Адмін</a>
+            </nav>
+            <img class="logo logo-fans" src="images/logo.svg" alt="logo of the Dynamo team">
+        </div>
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+            
+                <ul class="menu__box">
+                  <li><a class="menu__item" href="index.html">Головна</a></li>
+                        <li>
+                            <div class="dropdown">
+                            <p class="menu__item">Матчі
+                            </p>
+                            <div class="dropdown-content">
+                              <a href="matches.html">Календар матчів</a>
+                              <a href="#">Наступна гра</a>
+                              <a href="#">Рейтинг</a>
+                            </div>
+                          </div>
+                        </li>
+                        <li><a class="menu__item" href="#">Новини</a></li>
+                        <li><a class="menu__item" href="fans.html">ФАН</a></li>
+                        <li><a class="menu__item" href="#contacts">Контакти</a></li>
+                        <li><a class="menu__item" href="#">Адмін</a></li>
+                </ul>
               </div>
-            <a class="rotate" href="">Новини</a>
-            <a class="rotate" href="fans.html">ФАН</a>
-            <a class="rotate" href="#contacts">Контакти</a>
-            <a class="rotate" href="">Адмін</a>
-        </nav>
-        <img class="logo logo-fans" src="images/logo.svg" alt="logo of the Dynamo team">
     </header>
+
 
     <section class="fans-text">
         <h2 class="appeal-of-fans">Звернення фанів</h2>
