@@ -217,6 +217,12 @@ th:first-child, td:first-child {
 
 }
 
+@media (max-width: 500px) {
+    .logo-fans {
+        display: none;
+    }
+}
+
 
 @media(max-width: 768px) {
 
