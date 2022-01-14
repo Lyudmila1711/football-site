@@ -1,6 +1,7 @@
 let appeal = document.getElementById('appeals');
 let form = document.getElementById('text');
 let date = document.getElementById("sign-date");
+let newAppeal = document.getElementById('text-of-fans')
 
 form.addEventListener('submit', addAppeal);
 
@@ -13,20 +14,18 @@ function addAppeal(a){
     let yyyy = today.getFullYear();
     today = dd + '.' + mm + '.' + yyyy;
 
-let newAppeal = document.getElementById('text-of-fans').value;
-
-if (newAppeal.length > 20){
+if (!newAppeal.value){
+    alert("введіть своє звернення перед відправкою");
+} else {
     let paragraph = document.createElement('p')
-    paragraph.innerHTML = newAppeal;
+    paragraph.innerHTML = newAppeal.value;
     date.append(paragraph);
 
     let setDate = document.createElement('p');
-    setDate.innerHTML = today;
+    setDate.innerHTML = today + '<br>' + '<hr>';
     date.append(setDate);
 
-    newAppeal = '';
+    newAppeal.value = ''
 
-} else {
-    alert("введіть своє звернення перед відправкою");
-}
+} 
 }
